@@ -1,0 +1,96 @@
+/* General Navbar Styling */
+
+@media (min-width: 47em) {   
+    body {
+        background-image: url('../../images/bg-header-desktop.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
+}    
+@media (max-width: 47em) {   
+    body {
+        background-image: url('../../images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size:contain;
+    }
+}    
+
+.nav-container {
+    display: grid;
+    margin-inline: 5rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@media (max-width: 47em) {
+    .nav-container {
+        margin-inline: 1rem;
+    }
+}
+
+.header-button {
+    width: 13rem;
+    border: none;
+    padding: 1.2em;
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+@media (max-width: 47em) {
+    .header-button {
+        width: 82vw;
+    }
+}
+
+.bg-button-ios {
+    box-shadow: hsl(171, 65%, 28%) 2px 3px 1px 0px;
+}
+
+.bg-button-ios:hover,
+.bg-button-ios:focus-visible {
+    background-color: var(--clr-primary-100);
+    transition: 600ms ease-out;
+}
+
+.bg-button-mac {
+    box-shadow: hsl(233, 70%, 56%) 2px 3px 1px 0px;
+}
+
+.bg-button-mac:hover,
+.bg-button-mac:focus-visible {
+    background-color: var(--clr-primary-400);
+    transition: 600ms ease-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+@media (max-width: 47em) {
+    .button-container {
+        display: grid;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-block: 2rem;
+    }
+}
+
+
+.header-paragraph {
+    text-align: center;
+    max-width: 44rem;
+    padding-block: 1rem;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    padding-block: 2rem;
+}
+

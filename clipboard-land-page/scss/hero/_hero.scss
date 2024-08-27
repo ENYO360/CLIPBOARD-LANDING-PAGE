@@ -1,0 +1,192 @@
+.section1 {
+    padding-block: 5rem;
+}
+
+.container1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'section1-heading section1-heading'
+    'section1-paragraph section1-paragraph'
+    'computer section1-list';
+}
+
+@media (max-width: 47em) {
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-template-areas: 
+        'section1-heading'
+        'section1-paragraph'
+        'computer'
+        'section1-list';
+
+    }
+}
+
+.section1-heading {
+    grid-area: section1-heading;
+    padding-inline: 1rem;
+}
+.section1-paragraph {
+    grid-area: section1-paragraph;
+}
+.computer {
+    grid-area: computer;
+}
+.section1-list {
+    grid-area: section1-list;
+}
+
+@media (min-width: 47em) {
+    .computer {
+        margin-left: -10%;
+    }
+}
+
+@media (max-width: 47em) {
+    .computer {
+        padding-inline: 2rem;
+    }
+}
+
+.section1-list {
+    max-width: 25rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 47em) {
+    .section1-list {
+        text-align: center;
+        max-width: none;
+    }
+}
+
+.section1-list li {
+    padding: 1.6rem;
+    line-height: 30px;
+}
+
+.fs-700,
+.section1-paragraph {
+    text-align: center;
+}
+
+.section1-paragraph {
+  max-width: 43rem;
+  font-weight: var(--fw-regular);  
+  padding: 1em;
+   margin-inline: auto;
+   margin-bottom: 4em;
+}
+
+/* section2 styling */
+
+.container2 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.section2-paragraph {
+    max-width: 40rem;
+    margin-inline: auto;
+    padding: 1em;
+    margin-bottom: 4em;
+    font-weight: var(--fw-regular);
+}
+
+/* section3 styling */
+
+.container3 {
+    display: grid;
+    margin-block: 5em;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+    'section3-heading section3-heading'
+    'section3-paragraph section3-paragraph'
+    'section3-list section3-list'
+    'section3-logo section3-logo';
+}
+
+.section3-heading {
+    grid-area: section3-heading;
+}
+
+.section3-paragraph {
+    grid-area: section3-paragraph;
+    text-align: center;
+    padding: 1em;
+    max-width: 40rem;
+    margin-inline: auto;
+    font-weight: var(--fw-regular);
+}
+
+.section3-list {
+    grid-area: section3-list;
+    display: flex;
+    justify-content: center;
+    margin-inline: 10em;
+    margin-block: 4em;
+    gap: 2rem;
+}
+
+@media (max-width: 47em) {
+    .section3-list {
+        display: grid;
+        margin-inline: 5em;
+    }
+}
+
+.section3-list-container {
+    display: grid;
+    max-width: 22rem;
+    text-align: center;
+}
+
+.section3-img {
+    display: flex;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.section3-logo {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10rem;
+    margin-block: 5rem;
+    gap: clamp(2rem, 3rem, 4rem);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 47em) {
+    .section3-logo {
+        display: grid;
+        margin-inline: 5rem;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+
+/* section4 styling */
+
+.container4 {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 8em;
+    margin-inline: 10rem;
+}
+
+.section4-paragraph {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 47rem;
+    padding: 1rem;
+}
+
+
